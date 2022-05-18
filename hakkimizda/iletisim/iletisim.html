@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="iletisim.css">
+    <title>Yiyecek Sepeti</title>
+</head>
+<body>
+    <div id="navbar">
+        <a href="/anasayfa/anasayfa.html"><img id="logo" src="images_videos/logo.png"></a>
+        <ul>
+            <li><a href="/anasayfa/anasayfa.html">Anasayfa</a></li>
+            <li><a href="/urunler/urunler.html">Ürünler</a></li>
+            <li><a href="/hakkimizda/hakkimizda.html">Hakkımızda</a></li>
+        </ul>
+    </div>
+
+    <div class="container">  
+        <form id="contact" action="" method="post">
+          <h3>Yiyeceksepeti İletişim Formu</h3>
+          <h4>Bizimle İletişime geçmek için aşşağıdaki alanları eksiksiz doldurun.</h4>
+          <fieldset>
+            <input placeholder="İsminiz" type="text" tabindex="1" required autofocus>
+          </fieldset>  
+          <fieldset>
+            <input placeholder="Mail Adresiniz" type="email" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Telefon Numaranız (isteğe bağlı)" type="tel" tabindex="3" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Web Siteniz (isteğe bağlı)" type="url" tabindex="4" required>
+          </fieldset>
+          <fieldset>
+            <textarea placeholder="Mesajınızı Buraya Yazın...." tabindex="5" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Gönderiliyor">Gönder</button>
+          </fieldset>
+        </form>
+      </div>
+</body>
+</html>

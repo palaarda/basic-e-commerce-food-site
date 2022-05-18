@@ -1,0 +1,63 @@
+*{font-family: Arial, Helvetica, sans-serif;}
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #ffff;
+}
+#navbar{
+	background:#b85514;
+	width: 100%;
+	height: 50px;
+	float: right;
+	position: relative;
+	top: -1px;
+}
+#navbar ul{
+float: right;
+margin-right: 90px;
+word-spacing: 35px;
+}
+#navbar ul li{
+	display: inline-block;
+	padding: 15px;
+}
+#navbar ul li a{
+	list-style: none;
+	color: white;
+	font-size: 17px;
+	font-size: bold;
+	position: relative;
+	top:-12px;
+	text-decoration: none;
+}
+#logo{
+	margin-left: 50px; 
+	width: 50px;
+}
+#navbar ul li a:hover{
+	color: #b3b3b3;
+}
+#hakkimizda{
+    position: relative;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 8px 2px rgb(211, 211, 211);
+    top: 250px;
+    height: 450px;
+    width: 1200px;
+}
+#hakkimizda h4{
+    position: absolute;
+    margin: auto;
+    margin-left: 250px;
+    top: 23px;
+}
+#hakkimizda img{
+    position: absolute;
+    width: 185px;
+    left: 32px;
+    top: 23px;
+}
+#hakkimizda a{
+    text-decoration: none;
+}

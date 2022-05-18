@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="urunler.css">
+    <script src="urunler.js"></script>
+    <title>Yiyecek Sepeti</title>
+</head>
+<body>
+    <div id="navbar">
+        <a href="/anasayfa/anasayfa.html"><img id="logo" src="images_videos/logo.png"></a>
+        <ul>
+            <li><a href="/anasayfa/anasayfa.html">Anasayfa</a></li>
+            <li><a href="urunler.html">Ürünler</a></li>
+            <li><a href="/hakkimizda/hakkimizda.html">Hakkımızda</a></li>
+        </ul>
+    </div>
+    <div id="filters">
+        <span>Adres Seçin</span>
+        <select name="iller"  id="citys-content" onchange="kirklareli()">
+            <option value="1">Adana</option>
+            <option value="2">Adıyaman</option>
+            <option value="3">Afyonkarahisar</option>
+            <option value="4">Ağrı</option>
+            <option value="5">Amasya</option>
+            <option value="6">Ankara</option>
+            <option value="7">Antalya</option>
+            <option value="8">Artvin</option>
+            <option value="9">Aydın</option>
+            <option value="10">Balıkesir</option>
+            <option value="11">Bilecik</option>
+            <option value="12">Bingöl</option>
+            <option value="13">Bitlis</option>
+            <option value="14">Bolu</option>
+            <option value="15">Burdur</option>
+            <option value="16">Bursa</option>
+            <option value="17">Çanakkale</option>
+            <option value="18">Çankırı</option>
+            <option value="19">Çorum</option>
+            <option value="20">Denizli</option>
+            <option value="21">Diyarbakır</option>
+            <option value="22">Edirne</option>
+            <option value="23">Elazığ</option>
+            <option value="24">Erzincan</option>
+            <option value="25">Erzurum</option>
+            <option value="26">Eskişehir</option>
+            <option value="27">Gaziantep</option>
+            <option value="28">Giresun</option>
+            <option value="29">Gümüşhane</option>
+            <option value="30">Hakkâri</option>
+            <option value="31">Hatay</option>
+            <option value="32">Isparta</option>
+            <option value="33">Mersin</option>
+            <option value="34">İstanbul</option>
+            <option value="35">İzmir</option>
+            <option value="36">Kars</option>
+            <option value="37">Kastamonu</option>
+            <option value="38">Kayseri</option>
+            <option value="39" onclick="kirklareli()">Kırklareli</option>
+            <option value="40">Kırşehir</option>
+            <option value="41">Kocaeli</option>
+            <option value="42">Konya</option>
+            <option value="43">Kütahya</option>
+            <option value="44">Malatya</option>
+            <option value="45">Manisa</option>
+            <option value="46">Kahramanmaraş</option>
+            <option value="47">Mardin</option>
+            <option value="48">Muğla</option>
+            <option value="49">Muş</option>
+            <option value="50">Nevşehir</option>
+            <option value="51">Niğde</option>
+            <option value="52">Ordu</option>
+            <option value="53">Rize</option>
+            <option value="54">Sakarya</option>
+            <option value="55">Samsun</option>
+            <option value="56">Siirt</option>
+            <option value="57">Sinop</option>
+            <option value="58">Sivas</option>
+            <option value="59">Tekirdağ</option>
+            <option value="60">Tokat</option>
+            <option value="61">Trabzon</option>
+            <option value="62">Tunceli</option>
+            <option value="63">Şanlıurfa</option>
+            <option value="64">Uşak</option>
+            <option value="65">Van</option>
+            <option value="66">Yozgat</option>
+            <option value="67">Zonguldak</option>
+            <option value="68">Aksaray</option>
+            <option value="69">Bayburt</option>
+            <option value="70">Karaman</option>
+            <option value="71">Kırıkkale</option>
+            <option value="72">Batman</option>
+            <option value="73">Şırnak</option>
+            <option value="74">Bartın</option>
+            <option value="75">Ardahan</option>
+            <option value="76">Iğdır</option>
+            <option value="77">Yalova</option>
+            <option value="78">Karabük</option>
+            <option value="79">Kilis</option>
+            <option value="80">Osmaniye</option>
+            <option value="81">Düzce</option>
+        </select>
+        
+        <select name="iller" id="kirklareli-content" onchange="babaeski()">
+            <option value="1">Babaeski</option>
+            <option value="2">Demirköy</option>
+            <option value="3">Kofçaz</option>
+            <option value="4">Lüleburgaz</option>
+            <option value="5">Pehlivanköy</option>
+            <option value="6">Pınarhisar</option>
+            <option value="7">Vize</option>
+        </select>
+        <select name="iller" id="babaeski-content">
+            <option value="1">Atatürk Mahallesi</option>
+            <option value="1">Demirkapı Mahallesi</option>
+            <option value="3">Gazikemal Mahallesi</option>
+            <option value="4">Halilpaşa Mahallesi</option>
+            <option value="5">Hazinedar Mahallesi</option>
+            <option value="6">Kurtuluş Mahallesi</option>
+            <option value="7">Şeker Mahallesi</option>
+            <option value="8">Birlik Mahallesi</option>
+            <option value="9">Dindoğru Mahallesi</option>
+            <option value="10">Gaziosmanpaşa Mahallesi</option>
+            <option value="11">Hamidiye Mahallesi</option>
+            <option value="12">Hürriyet Mahallesi</option>
+            <option value="13">Paşa Mahallesi</option>
+            <option value="14">Yeni Mahallesi</option>
+            <option value="15">Cumhuriyet Mahallesi</option>
+            <option value="16">Fevziçakmak Mahallesi</option>
+            <option value="17">Hacıhasan Mahallesi</option>
+            <option value="18">Hatip Mahallesi</option>
+            <option value="19">Kemal Paşa Mahallesi</option>
+            <option value="20">Şamdani Mahallesi</option>
+        </select>
+        <div id="radio-buttons">
+            <input type="radio" id="ack" name="fav_language" value="HTML">
+            <label for="ack">Açık Restorantları Göster</label><br>
+            <input type="radio" id="btn" name="fav_language" value="HTML">
+            <label for="btn">Bütün Restorantları Göster</label><br>
+            <input type="radio" id="gnn" name="fav_language" value="HTML">
+            <label for="gnn">Günün Restorantını Göster</label><br>
+        </div>
+    </div>
+    <div id="urunler">
+        <div id="a">
+            <img src="images_videos/burgerking.jpg">
+            <h4>Burger King <br></h4>
+            <h5>Enfes burger menü.<br>100 gram dana hamburger köfte + çıtır patates kızartması + kutu içecek.<br> 50TL </h5>
+            <button><a href="odeme/odeme.html">Şimdi Sipariş Ver</a></button>
+        </div>
+        <div id="a">
+            <img src="images_videos/palakokorec.jpg">
+            <h4>Pala Kokoreç <br></h4>
+            <h5>Enfes kokoreç menü.<br>%100 Kuzu enfes kokoreç + Ayran.<br> 35TL </h5>
+            <button><a href="odeme/odeme.html">Şimdi Sipariş Ver</a></button>
+        </div>
+        <div id="a">
+            <img src="images_videos/izabellapizza.jpg">
+            <h4>İzabella Pizza <br></h4>
+            <h5>Kanka menü.<br>2 Adet klasik ortaboy pizza + çıtır patates kızartması + litrelik içecek.<br> 115TL </h5>
+            <button><a href="odeme/odeme.html">Şimdi Sipariş Ver</a></button>
+        </div>
+        <div id="a">
+            <img src="images_videos/sucukcuefendi.jpg">
+            <h4>Sucukçu Efendi<br></h4>
+            <h5>Sucuğa doyamayanlar menü.<br>%100 dana yarım ekmek arası sucuk + içecek.<br> 35TL </h5>
+            <button><a href="odeme/odeme.html">Şimdi Sipariş Ver</a></button>
+        </div>
+        <div id="a">
+            <img src="images_videos/cihankebap.jpg">
+            <h4>Cihan Kebap<br></h4>
+            <h5>Lahmacun menü.<br>2 Adet enfes lahmacun + içecek<br> 30TL </h5>
+            <button><a href="odeme/odeme.html">Şimdi Sipariş Ver</a></button>
+        </div>
+        <div id="a">
+            <img src="images_videos/baruthanepilavcisi.jpg">
+            <h4>Baruthane Pilavcısı<br></h4>
+            <h5>Pilav üstü bol sivas kavurma.<br>Pilav üstü sivas kavurma + ayran<br> 50TL </h5>
+            <button><a href="odeme/odeme.html">Şimdi Sipariş Ver</a></button>
+        </div>
+        <div id="a">
+            <img src="images_videos/kofteciyusuf.jpg">
+            <h4>Köfteci Yusuf<br></h4>
+            <h5>Oha köfte menü.<br>7 Adet %100 dana köfte + meze + kutu içecek.<br> 55TL </h5>
+            <button><a href="odeme/odeme.html">Şimdi Sipariş Ver</a></button>
+        </div>
+        <div id="a">
+            <img src="images_videos/baydoner.jpg">
+            <h4>Baydöner<br></h4>
+            <h5>Coss latan menü.<br>1.5 porsiyon dana iskender + kutu içecek.<br> 75TL </h5>
+            <button><a href="odeme/odeme.html">Şimdi Sipariş Ver</a></button>
+        </div>
+        <div id="a">
+            <img src="images_videos/itsumi.jpg">
+            <h4>İtsumi<br></h4>
+            <h5>Subete no menü.<br>4 Adet California Roll + 2 Adet Maguro + 2 Adet Hotate + Soya Sos + Zencefil<br> 185TL </h5>
+            <button><a href="odeme/odeme.html">Şimdi Sipariş Ver</a></button>
+        </div>
+        <div id="a">
+            <img src="images_videos/simitsarayi.jpg">
+            <h4>Simit Sarayı<br></h4>
+            <h5>Kahvaltı menü.<br>2 Adet Simit + 2 Adet Poğaça + içecek.<br> 20TL </h5>
+            <button><a href="odeme/odeme.html">Şimdi Sipariş Ver</a></button>
+        </div>
+    </div>
+    <a href="/urunler/odeme/kulsozlesmesi/kulsozlesmesi.html"><footer>© 2022 Yiyecek Sepeti | <a href="/hakkimizda/iletisim/iletisim.html">İletişim</a> </footer></a>
+</body>
+</html>

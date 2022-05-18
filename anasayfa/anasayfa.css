@@ -1,0 +1,173 @@
+*{font-family: Arial, Helvetica, sans-serif;}
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #ffff;
+}
+#navbar{
+	background:#b85514;
+	width: 100%;
+	height: 50px;
+	float: right;
+	position: relative;
+	top: -1px;
+}
+#navbar ul{
+float: right;
+margin-right: 90px;
+word-spacing: 35px;
+}
+#navbar ul li{
+	display: inline-block;
+	padding: 15px;
+}
+#navbar ul li a{
+	list-style: none;
+	color: white;
+	font-size: 17px;
+	font-size: bold;
+	position: relative;
+	top:-12px;
+	text-decoration: none;
+}
+#logo{
+	margin-left: 50px; 
+	width: 50px;
+}
+#navbar ul li a:hover{
+	color: #b3b3b3;
+}
+#video2{
+	position: relative;
+	top: -1px;
+	width: 1920px;	
+	opacity: 0.8;
+}
+#kampanya{
+	font-size: 55px;
+	color: white;
+	text-align: center;
+	position: relative;
+	top: -455px;
+	margin-left: 1000px;
+	font-family: sans-serif;
+}
+#kampanya2{
+	font-size: 32px;
+	color: white;
+	text-align: center;
+	position: relative;
+	top: -465px;
+	margin-left: 1000px;
+	text-shadow: 2px -2px 3px #000;
+}
+#slider-content{
+	position: relative;
+	width: 500px;
+	height: 300px;
+	float: right;
+	margin-top: -180px;
+	left: -160px;
+	border: 2px solid #b85514;
+	overflow: hidden;
+}
+#slider-content ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+#slider-content ul li{
+	position: absolute;
+}
+#slider-content ul li:nth-of-type(1){
+	left: 0;
+}
+#slider-content ul li:nth-of-type(2){
+	left: 500px;
+}
+#slider-content ul li:nth-of-type(3){
+	left: 1000px;
+}
+#slider{
+	position: absolute;
+	left: 0;
+	animation-name: kampanyaSlider;
+	animation-duration: 8s;
+	animation-delay: 0.5s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+#slider-content ul li:hover{
+	opacity: 0.9;
+}
+@keyframes kampanyaSlider{
+	0%{left: 0px;}
+	15%{left: 0px;}
+	40%{left: -500px;}
+	55%{left: -500px;}
+	80%{left: -1000px;}
+	100%{left: -1000px;}
+}
+#category-content{
+	width: 1000px;
+	height: 130px;
+	margin-top: -225px;
+	margin-left: 100px;
+}
+#category1{
+	display: inline-flex;
+}
+#category1 img{
+	width: 65px;
+	padding: 45px;
+}
+#category2{
+	display: inline-flex;
+	margin-left: -25px;
+}
+#category2 img{
+	width: 95px;
+	padding: 45px;
+}
+#category-text{
+	width: 1100px;
+	margin-left: 85px;
+	margin-top: 2px;
+}
+#category-text a{
+	position: relative;
+	padding: 55px;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #b85514;
+	font-size: bold;
+}
+#lahmacun-text{
+	margin-left: 10px;
+}
+#doner-text{
+	margin-left: 25px;
+}
+#burger-text{
+	margin-left: 18px;
+}
+#yemek-text{
+	margin-left: -2px;
+}
+#hizli-text{
+	margin-left: -13px;
+}
+footer{
+	position: absolute;
+	bottom: 0px;
+	left: 35%;
+	border-top: 1px solid rgb(160, 160, 160);
+	padding: 0 200px ;
+}
+footer a{
+	color: black;
+	text-decoration: none;
+}
+footer a:hover{
+	color: rgb(0, 17, 255);
+}

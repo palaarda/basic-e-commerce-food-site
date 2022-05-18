@@ -1,0 +1,174 @@
+*{font-family: Arial, Helvetica, sans-serif;}
+body{
+    margin: 0;
+    padding: 0;
+	height: 3700px;
+}
+#navbar{
+	background:#b85514;
+	width: 100%;
+	height: 50px;
+	float: right;
+	position: fixed;
+	top: -1px;
+	z-index: 2;
+}
+#navbar ul{
+float: right;
+margin-right: 90px;
+word-spacing: 35px;
+}
+#navbar ul li{
+	display: inline-block;
+	padding: 15px;
+}
+#navbar ul li a{
+	list-style: none;
+	color: white;
+	font-size: 17px;
+	font-size: bold;
+	position: relative;
+	top:-12px;
+	text-decoration: none;
+}
+#logo{
+	margin-left: 50px; 
+	width: 50px;
+}
+#navbar ul li a:hover{
+	color: #b3b3b3;
+}
+#filters{
+	position: fixed;
+	background: rgba(0, 0, 0, 0.3);
+	top: 75px;
+	left: 25px;
+	width: 250px;
+	height: 350px;
+	border-radius: 10px;
+	box-shadow: 0 2px 2px rgb(97, 93, 93);
+}
+span{
+	position: relative;
+	top: 30px;
+	left: 15px;
+	font-size: 17px;
+	color: #ffffff;
+}
+select{
+	box-shadow: 0 5px 5px rgb(97, 93, 93);
+	font-size: 1.2rem;
+	padding: 4px 7px;
+	background: #4d5061;
+	border: 0;
+}
+#citys-content{
+	position: relative;
+    color: #b3b3b3;
+	left: 13px;
+	top: 36px;
+	border-radius: 5px;
+}
+#citys-content::-webkit-scrollbar{
+	width: 7px;
+	background: #283242;
+	border-radius: 3px;
+}
+#citys-content::-webkit-scrollbar-thumb{
+	background: #525861;
+	border-radius: 3px;
+}
+#kirklareli-content{
+	position: relative;
+    color: #b3b3b3;
+	left: 13px;
+	top: 45px;
+	border-radius: 5px;
+	padding: 4px 48px 2px 5px;
+	display: none;
+}
+#babaeski-content{
+	position: relative;
+    color: #b3b3b3;
+	left: 13px;
+	top: 54px;
+	border-radius: 5px;
+	width: 178px;
+	padding-left: 1px;
+	display: none;
+}
+#babaeski-content::-webkit-scrollbar{
+	width: 7px;
+	background: #283242;
+	border-radius: 3px;
+}
+#babaeski-content::-webkit-scrollbar-thumb{
+	background: #525861;
+	border-radius: 3px;
+}
+#radio-buttons{
+	margin-top: 70px;
+}
+#urunler{
+	position: absolute;
+	background: rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 2px 3px 3px rgb(211, 211, 211);
+	border-radius: 8px;
+	width: 80%;
+	top: 75px;
+	left: 330px;
+	height: 3500px;
+}
+#urunler div{
+	position: relative;
+	box-shadow: 0px 2px 8px 2px rgb(211, 211, 211);
+	left: 160px;
+	display: inline-block;
+	padding: 50px;
+	text-align: center;
+	height: 550px;
+	top: 50px;
+	margin: 10px;
+}
+#urunler img{
+	border-radius: 12px;
+	transition: 0.15s;
+}
+#urunler img:hover{
+	opacity: .9;
+}
+#urunler button{
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 0.25s;
+}
+#urunler button a{
+	color: white;
+	text-decoration: none;
+}
+#urunler button:hover{
+	box-shadow: 0 9px 14px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	opacity: 0.9;
+}
+footer{
+	position: absolute;
+	border-top: 1px solid rgb(160, 160, 160);
+	bottom: -2710px;
+	left: 30%;
+	padding: 0 200px ;
+	z-index: 2;
+}
+footer a{
+	color: black;
+	text-decoration: none;
+}
+footer a:hover{
+	color: rgb(0, 17, 255);
+}

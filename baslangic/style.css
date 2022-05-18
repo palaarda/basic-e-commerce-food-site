@@ -1,0 +1,27 @@
+#backgroundVideo{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.8;
+}
+#content{
+  position: fixed;
+  top: 35%;
+  margin-left: 650px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+}
+
+#startNowButton{
+background-color: transparent;
+border:1px solid white;
+color: white;
+cursor: pointer;
+padding: 9px 30px;
+font-family: 'Roboto', sans-serif;
+}
