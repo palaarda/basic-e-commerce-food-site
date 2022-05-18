@@ -9,5 +9,4 @@
 ### Products
 and more<br>
 Some parts of the site may not work.<br>
-Sitenin bazı yerleri hatalı ve bazı işlevler çalışmayabilir.
-
+Sitenin bazı yerleri hatalı ve bazı işlevler çalışmayabilir.  
